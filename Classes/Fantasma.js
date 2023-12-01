@@ -44,6 +44,8 @@ verificarColisaoPp(paredes, pacman){
   }
   if(this.sprite.collide(pacman)){
     pacman.destroy()
+    pacman.velocityX = 0
+    pacman.valocityY = 0
   }
 }
 }

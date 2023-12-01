@@ -97,22 +97,18 @@ function movimentoPacman(){
         if(keyIsDown(LEFT_ARROW)){
             pacman.position.x -=5
             pacman.changeAnimation("changingLeft")
-            movimentoPermitido = true
         }
         if(keyIsDown(RIGHT_ARROW)){
             pacman.position.x +=5
-            pacman.changeAnimation("running")
-            movimentoPermitido = true  
+            pacman.changeAnimation("running")  
         }
         if(keyIsDown(UP_ARROW)){
             pacman.position.y -=5
             pacman.changeAnimation("changingUp")
-            movimentoPermitido = true
         }
         if(keyIsDown(DOWN_ARROW)){
             pacman.position.y +=5
             pacman.changeAnimation("changingDown")
-            movimentoPermitido = true
         }
         if(pacman.position.x < 0){
             pacman.position.x = width
